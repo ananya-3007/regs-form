@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<form>
+		<label>First name:<input type="text" name="Firstname" placeholder="Firstname" required></label><br>
+		<label>Last name:<input type="text" name="Lastname" placeholder="Lastname" required></label><br>
+		<label>Male<input type="radio" name="gender" value="male"></label>
+		<label>Female<input type="radio" name="gender" value="female"></label>
+		<label>Other<input type="radio" name="gender" value="other"></label><br>
+		<label>Email<input type="email" name="email" placeholder="Your email" required></label><br>
+		<label>Password:<input type="password" name="password" placeholder="Your password" pattern=".{5,10}" required title="Please enter your password of length between 5 to 10"></label><br>
+		<label for=" ">Birthday:</label>
+		<select id="Birthday" name="Month">
+			<option>Month</option>
+			<option>January</option>
+			<option>February</option>
+			<option>March</option>
+			<option>April</option>
+		</select>
+		<select id="Birthday" name="Day">
+			<option>Day</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+		<select id="Birthday" name="Year">
+			<option>Year</option>
+			<option>1999</option>
+			<option>2000</option>
+			<option>2001</option>
+			<option>2002</option>
+		</select><br>
+		<label>I agree to the terms and conditions
+			<input type="checkbox" name="check">
+		</label><br>
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>
